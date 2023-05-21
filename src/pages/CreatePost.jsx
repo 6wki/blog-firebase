@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import "react-toastify/dist/ReactToastify.css";
 import { addDoc, collection } from "firebase/firestore";
 import { auth, db } from "../Firebase";
 import { useNavigate } from "react-router-dom";
@@ -7,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 const CreatePost = ({ isAuth }) => {
   const [title, setTitle] = useState("");
   const [postText, setPostText] = useState("");
-  const navigate = useNavigate("/");
+  const navigate = useNavigate();
 
   const postsCollectionRef = collection(db, "posts");
   const createPost = async () => {

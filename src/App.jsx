@@ -6,6 +6,7 @@ import Lgn from "./pages/Login";
 import { useState } from "react";
 import { signOut } from "firebase/auth";
 import { auth } from "./Firebase";
+import HomePage from "./pages/LandingPage/LandingPage";
 
 function App() {
   const [isAuth, setIsAuth] = useState(localStorage.getItem("isAuth"));
@@ -18,19 +19,16 @@ function App() {
   };
   return (
     <Router>
-      <nav>
-        <Link to="/">Home</Link>
-        {!isAuth ? (
-          <Link to="/login">Login</Link>
-        ) : (
-          <>
-            <Link to="/newpost">Create Post</Link>
-            <button onClick={signOutUser}>Log Out</button>
-          </>
-        )}
-      </nav>
+      {isAuth && (
+        <nav>
+          <Link to="/home">Home</Link>
+          <Link to="/newpost">Create Post</Link>
+          <button onClick={signOutUser}>Log Out</button>
+        </nav>
+      )}
       <Routes>
-        <Route path="/" element={<Home isAuth={isAuth} />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/home" element={<Home isAuth={isAuth} />} />
         <Route path="/newpost" element={<Cp />} isAuth={isAuth} />
         <Route path="/login" element={<Lgn setIsAuth={setIsAuth} />} />
       </Routes>
