@@ -6,7 +6,7 @@ const HomPage = () => {
   return (
     <main id="home" className="home">
       <div>
-        <h1>RITY</h1>
+        <h1>Rity</h1>
         <h2>The Whole World in One Party</h2>
         <Link to="/login">
           <button className="buttonLanding">

@@ -1,12 +1,10 @@
-@font-face {
-  font-family: "logo";
-  src: url("./assets/Newake-Font-Demo.otf");
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Braah+One&display=swap");
 
 * {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 :root {
@@ -50,7 +48,7 @@
 .blop {
   position: absolute;
   right: -50%;
-  top: -5rem;
+  top: -10rem;
 }
 
 .arrow {
@@ -66,9 +64,12 @@
 }
 
 .landingPage main h1 {
-  color: var(--white-color);
+  color: #fff;
+  word-spacing: 1;
   font-size: 5rem;
-  font-family: logo;
+  font-family: "Braah One", sans-serif;
+  font-weight: 500;
+  font-size: 6rem;
 }
 
 .landingPage main {
@@ -266,4 +267,82 @@
 
 .bg2 {
   position: absolute;
+  width: 100%;
+}
+
+/* Login page */
+
+.loginPage {
+  position: relative;
+  background-color: #0d0e25;
+  height: 100vh;
+  overflow: hidden;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-direction: column;
+  z-index: 2;
+}
+
+.bg3 {
+  position: absolute;
+  top: -75%;
+  left: -15%;
+}
+
+.logoLogin {
+  width: 12rem;
+}
+
+.loginBtn {
+  max-width: 320px;
+  display: flex;
+  padding: 0.5rem 1.4rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+  align-items: center;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  gap: 0.75rem;
+  color: rgb(65, 63, 63);
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.6s ease;
+}
+
+.loginBtn svg {
+  height: 24px;
+}
+
+.loginBtn:hover {
+  transform: scale(1.02);
+}
+
+.goBack {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+
+.goBack svg {
+  transform: scale(1.9);
+  fill: #fff;
 }
