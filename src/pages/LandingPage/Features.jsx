@@ -9,42 +9,39 @@ const Features = () => {
   return (
     <section id="features" className="features">
       <img src={bg} className="bg2" />
-      <div className="card glass">
-        <img src={prsn} />
-        <h2>User-friendly interface</h2>
-        <p>
-          Rity should be easy to use for people of all ages and abilities. The
-          interface should be clean and uncluttered, and the navigation should
-          be intuitive.
-        </p>
-      </div>
-      <div className="card glass">
-        <img src={lct} />
-        <h2>Global community</h2>
-        <p>
-          Rity should be a global community where people from all over the world
-          can connect with each other. This could be achieved by providing
-          translation tools and by encouraging users to share their thoughts and
-          ideas about a wide range of topics.
-        </p>
-      </div>
-      <div className="card glass">
-        <img src={str} />
-        <h2>Opportunities for learning</h2>
-        <p>
-          Rity should be a platform where people can learn from each other. This
-          could be achieved by providing users with access to educational
-          resources, such as articles, videos, and podcasts.
-        </p>
-      </div>
-      <div className="card glass">
-        <img src={scr} />
-        <h2>Secure platform</h2>
-        <p>
-          Rity should be a secure platform for sharing thoughts and ideas. Users
-          should be able to trust that their privacy will be respected, and that
-          their data will be safe from unauthorized access.
-        </p>
+      <div>
+        <div className="card glass">
+          <img src={prsn} />
+          <h2>User-friendly interface</h2>
+          <p>
+            Rity is a user-friendly platform, I work so hard to make your
+            experience enjoyable.
+          </p>
+        </div>
+        <div className="card glass">
+          <img src={lct} />
+          <h2>Global community</h2>
+          <p>
+            Rity is an open app for everyone, you will find all the countries
+            and cities and villages in one place.
+          </p>
+        </div>
+        <div className="card glass">
+          <img src={str} />
+          <h2>Opportunities for learning</h2>
+          <p>
+            Due the differences of cultures & experiences here you will be able
+            to learn a lot from others and enhance your knowledge.
+          </p>
+        </div>
+        <div className="card glass">
+          <img src={scr} />
+          <h2>Secure platform</h2>
+          <p>
+            This is a very secure platform, the data of our users is in a safe
+            place plus the website is empty from any bugs.
+          </p>
+        </div>
       </div>
     </section>
   );

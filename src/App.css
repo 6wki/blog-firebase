@@ -235,8 +235,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
   color: #fff;
+}
+
+.features > div {
+  max-width: 1600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  z-index: 2;
 }
 
 .card {
@@ -248,6 +256,7 @@
   width: 20rem;
   height: 20rem;
   position: relative;
+  padding: 1rem;
 }
 
 .card p {
@@ -259,8 +268,7 @@
 }
 
 .card img {
-  width: 3rem;
-  height: 3rem;
+  transform: scale(1.4);
   position: absolute;
   top: -8%;
 }
