@@ -4,6 +4,7 @@ import navData from "../Navbar/navData";
 import blop from "../../assets/imgs/blop.svg";
 import logo from "../../assets/imgs/logowebsite.png";
 import Features from "./Features";
+import Feedback from "./Feedback";
 import About from "./About";
 import HomPage from "./HomPage";
 
@@ -16,6 +17,7 @@ const LandingPage = () => {
       <HomPage />
       <About />
       <Features />
+      <Feedback />
     </div>
   );
 };

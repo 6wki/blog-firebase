@@ -5,6 +5,8 @@
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  color: #fff;
 }
 
 :root {
@@ -25,6 +27,13 @@
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(7.4px);
   -webkit-backdrop-filter: blur(7.4px);
+}
+
+.sec {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Landing Page */
@@ -53,14 +62,20 @@
 
 .arrow {
   position: absolute;
-  top: 2%;
-  right: -40%;
+  top: 2rem;
+  z-index: -2;
+  right: -18rem;
 }
 
-.landingPage h2 {
+.landingPage main h2 {
   text-align: center;
   width: 70%;
-  color: var(--white-color);
+  position: absolute;
+  bottom: 44%;
+  font-size: 0.6rem;
+  word-spacing: 1rem;
+  text-transform: uppercase;
+  z-index: 999;
 }
 
 .landingPage main h1 {
@@ -69,7 +84,8 @@
   font-size: 5rem;
   font-family: "Braah One", sans-serif;
   font-weight: 500;
-  font-size: 6rem;
+  font-size: 8rem;
+  text-shadow: 0 0 30px #fff, 0 0 10px #fff, 0 0 150px #ffffff;
 }
 
 .landingPage main {
@@ -154,7 +170,6 @@
   border: 0.08em solid var(--white-color);
   border-radius: 0.3em;
   font-size: 12px;
-  margin-top: 2rem;
   cursor: pointer;
 }
 
@@ -215,13 +230,9 @@
 }
 
 .secondPart {
-  width: 35rem;
+  width: 40rem;
   padding: 2rem;
   display: flex;
-}
-
-.secondPart p {
-  color: #fff;
 }
 
 .secondPart img {
@@ -229,14 +240,6 @@
 }
 
 /* Features */
-
-.features {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-}
 
 .features > div {
   max-width: 1600px;
@@ -303,6 +306,22 @@
   position: absolute;
   top: -75%;
   left: -15%;
+  animation: wheel 120s infinite ease-in-out;
+}
+
+@keyframes wheel {
+  0% {
+    transform: rotate(0);
+  }
+
+  50% {
+    transform: rotate(360deg);
+    scale: 1.5;
+  }
+
+  100% {
+    transform: rotate(0);
+  }
 }
 
 .logoLogin {
@@ -353,4 +372,37 @@
 .goBack svg {
   transform: scale(1.9);
   fill: #fff;
+}
+
+/* Features */
+
+.feedback {
+  position: relative;
+  z-index: 4;
+}
+
+.feedbackCard {
+  width: 20rem;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.feedbackCard input {
+  height: 5rem;
+}
+
+.feedbackCard textarea {
+  resize: none;
+  height: 100%;
+}
+
+.feedbackCard textarea,
+.feedbackCard input {
+  padding: 1rem;
+  color: #000;
+  border-radius: 1rem;
+  outline: none;
+  border: none;
 }

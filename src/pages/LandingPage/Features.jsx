@@ -7,7 +7,7 @@ import bg from "../../assets/imgs/bg2.svg";
 
 const Features = () => {
   return (
-    <section id="features" className="features">
+    <section id="features" className="features sec">
       <img src={bg} className="bg2" />
       <div>
         <div className="card glass">

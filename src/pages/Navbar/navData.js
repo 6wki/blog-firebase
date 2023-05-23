@@ -1,5 +1,5 @@
 const navData = [
-  ["home", "about", "features", "support"],
+  ["home", "about", "features", "feedback"],
   ["Login", "ccc", "bbb", "aaa"],
 ];
 
