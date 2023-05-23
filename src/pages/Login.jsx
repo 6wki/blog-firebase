@@ -25,7 +25,7 @@ const Login = ({ setIsAuth }) => {
       <div className="loginContainer">
         <img src={logo} className="logoLogin" />
         <p>Please Sign In with Google to Continue</p>
-        <button class="loginBtn">
+        <button className="loginBtn" onClick={signInWithGoogle}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             preserveAspectRatio="xMidYMid"
