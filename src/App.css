@@ -87,6 +87,7 @@
   bottom: -2rem;
   z-index: -2;
   transform: scale(0.6);
+  rotate: 25deg;
 }
 
 .arrow {
@@ -519,8 +520,8 @@
 .rightFd p {
   margin-top: 5rem;
   width: 15rem;
-  direction: rtl;
   margin-left: 4.5rem;
+  text-align: right;
 }
 
 .rightFd form {
