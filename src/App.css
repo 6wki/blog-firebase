@@ -13,6 +13,7 @@
   --dark-color: #657786;
   --dark-blue: #0d0e25;
   --white-color: #ffff;
+  --beautiful-blue: #1fd0ec;
 }
 
 #root {
@@ -20,6 +21,15 @@
 }
 
 /* Utilities */
+
+.split {
+  position: relative;
+  width: 100%;
+}
+
+.splitContainer {
+  display: flex;
+}
 
 .glass {
   background: rgba(255, 255, 255, 0.092);
@@ -379,30 +389,91 @@
 .feedback {
   position: relative;
   z-index: 4;
+  overflow: hidden;
 }
 
-.feedbackCard {
-  width: 20rem;
-  height: 25rem;
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
+.feedbackContainer {
+  width: 60rem;
+  height: 35rem;
 }
 
-.feedbackCard input {
-  height: 5rem;
+.leftFd {
+  position: relative;
 }
 
-.feedbackCard textarea {
-  resize: none;
-  height: 100%;
+.hdFdback {
+  width: 30rem;
+  margin-left: 4rem;
+  margin-top: 1rem;
 }
 
-.feedbackCard textarea,
-.feedbackCard input {
-  padding: 1rem;
-  color: #000;
-  border-radius: 1rem;
-  outline: none;
-  border: none;
+.freedom {
+  position: absolute;
+  left: 7rem;
+  width: 15rem;
+  top: 8rem;
+  z-index: 2;
+}
+
+.leftHand {
+  left: -2.5rem;
+  bottom: 3rem;
+}
+
+.rightHand {
+  left: 13rem;
+  top: 6rem;
+}
+
+.leftHand,
+.rightHand {
+  position: absolute;
+  width: 15rem;
+}
+
+.circles {
+  position: absolute;
+  left: 10rem;
+  z-index: -1;
+}
+
+.circle {
+  width: 8rem;
+  height: 8rem;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c1 {
+  top: 9.4rem;
+  left: 4.8rem;
+}
+
+.c2 {
+  background-color: var(--beautiful-blue);
+  transform: scale(1.5);
+  z-index: -2;
+  top: 3rem;
+  left: 1.5rem;
+}
+
+.c3 {
+  bottom: -5rem;
+  left: -2.5rem;
+}
+
+.bgFd {
+  position: absolute;
+  bottom: -50rem;
+  z-index: -5;
+}
+
+.infoBg {
+  width: 26rem;
+  position: absolute;
+  right: 3.3rem;
+  z-index: -1;
+  bottom: 50%;
+  transform: translateY(50%);
 }
