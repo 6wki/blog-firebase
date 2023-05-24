@@ -431,6 +431,7 @@
 
 .leftFd {
   position: relative;
+  left: -2rem;
 }
 
 .hdFdback {
@@ -517,8 +518,9 @@
 
 .rightFd p {
   margin-top: 5rem;
-  width: 20rem;
+  width: 15rem;
   direction: rtl;
+  margin-left: 4.5rem;
 }
 
 .rightFd form {
