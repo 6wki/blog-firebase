@@ -23,7 +23,19 @@ const Feedback = () => {
           </div>
         </div>
         <div className="rightFd split">
-          <p></p>
+          <p>
+            Your feedback means a lot to us so we can improve our website for
+            you.
+          </p>
+          <form>
+            <label htmlFor="name">Name *</label>
+            <input type="text" id="name" />
+            <label htmlFor="email">Email address *</label>
+            <input type="text" id="email" />
+            <label htmlFor="message">Message *</label>
+            <textarea type="text" id="message" />
+            <button>LET'S TALK</button>
+          </form>
           <img src={infoBg} className="infoBg" />
         </div>
       </div>

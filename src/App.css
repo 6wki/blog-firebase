@@ -70,11 +70,29 @@
   top: -10rem;
 }
 
+.rightHomepage,
+.leftHomepage {
+  position: absolute;
+  transform: scale(0.8);
+}
+
+.rightHomepage {
+  top: 0;
+  right: -1rem;
+}
+
+.leftHomepage {
+  left: -2rem;
+  bottom: -3rem;
+  z-index: -2;
+}
+
 .arrow {
   position: absolute;
-  top: 2rem;
+  top: 2.5rem;
+  transform: scale(0.9);
   z-index: -2;
-  right: -18rem;
+  right: -15rem;
 }
 
 .landingPage main h2 {
@@ -86,6 +104,18 @@
   word-spacing: 1rem;
   text-transform: uppercase;
   z-index: 999;
+}
+
+.landingPage main p {
+  font-size: 20rem;
+  position: absolute;
+  z-index: -54;
+  opacity: 0.1;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  top: 0rem;
+  color: transparent;
+  -webkit-text-stroke: 2px #fff;
 }
 
 .landingPage main h1 {
@@ -476,4 +506,43 @@
   z-index: -1;
   bottom: 50%;
   transform: translateY(50%);
+}
+
+.rightFd label,
+.rightFd p {
+  color: var(--dark-blue);
+}
+
+.rightFd p {
+  margin-top: 3rem;
+  width: 20rem;
+  direction: rtl;
+}
+
+.rightFd form {
+  z-index: 5;
+  position: absolute;
+  bottom: 2.6rem;
+  width: 100%;
+  right: 3.3rem;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.rightFd form button {
+  margin-top: 3rem;
+  border: none;
+  background-color: #fb01fe;
+  cursor: pointer;
+  width: 100%;
+  height: 3rem;
+}
+
+.rightFd input,
+.rightFd label,
+.rightFd textarea {
+  width: 85%;
 }
