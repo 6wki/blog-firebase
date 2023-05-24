@@ -11,8 +11,8 @@ const HomPage = () => {
         <h1>Rity</h1>
         <h2>The Whole World in One Party</h2>
         <p>RITY</p>
-        <img src={lfth} className="leftHomepage" />
-        <img src={rth} className="rightHomepage" />
+        <img src={lfth} className="leftHomepage handl" />
+        <img src={rth} className="rightHomepage handr" />
         <Link to="/login">
           <button className="buttonLanding">
             <span>Join Now</span>
