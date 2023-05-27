@@ -20,7 +20,10 @@ const WelcomeUser = () => {
       <div>
         <h2>
           Good {timeOfDay === "Morning" ? "Morning" : "Evening"}
-          <span> {auth.currentUser.displayName}</span>
+          <span>
+            {" "}
+            {auth.currentUser != null ? auth.currentUser.displayName : ""}
+          </span>
         </h2>
         <p>Welcome to Rity</p>
       </div>
