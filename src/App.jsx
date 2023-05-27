@@ -8,6 +8,7 @@ import { signOut } from "firebase/auth";
 import { auth } from "./Firebase";
 import HomePage from "./pages/LandingPage/LandingPage";
 import navData from "./pages/Navbar/navData";
+import Navbar from "./pages/Navbar/Navbar";
 
 function App() {
   // Setting the Auth of the user
@@ -28,11 +29,6 @@ function App() {
         <nav className="hmPageNavbar glass">
           <Link to="/">Home</Link>
           <Link to="/newpost">Create Post</Link>
-          {navData.map((data) => {
-            <Link key={crypto.randomUUID()} to={data}>
-              {data}
-            </Link>;
-          })}
           <button onClick={signOutUser}>Log Out</button>
         </nav>
       )}

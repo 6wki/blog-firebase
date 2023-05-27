@@ -29,7 +29,7 @@ const CreatePost = ({ isAuth }) => {
   }, []);
 
   return (
-    <div className="createPostPage">
+    <div className="createPostPage theContainer">
       <div className="cpContainer">
         <h1>Create a Post</h1>
         <div className="inputGp">

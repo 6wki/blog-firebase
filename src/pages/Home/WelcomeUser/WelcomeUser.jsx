@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import bg from "../../../assets/imgs/bg3.svg";
+import { auth } from "../../../Firebase";
 
 const WelcomeUser = () => {
   // This function shows a text based on the time of the user
@@ -19,7 +20,7 @@ const WelcomeUser = () => {
       <div>
         <h2>
           Good {timeOfDay === "Morning" ? "Morning" : "Evening"}
-          <span> User</span>
+          <span> {auth.currentUser.displayName}</span>
         </h2>
         <p>Welcome to Rity</p>
       </div>
