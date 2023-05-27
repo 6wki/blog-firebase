@@ -1,6 +1,6 @@
 const navData = [
   ["home", "about", "features", "feedback"],
-  ["Login", "ccc", "bbb", "aaa"],
+  ["trendings", "categories"],
 ];
 
 export default navData;

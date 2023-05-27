@@ -15,6 +15,7 @@
   --white-color: #ffff;
   --beautiful-blue: #1fd0ec;
   --pink-color: #fb01fe;
+  --border-radius1: 0.8rem;
 }
 
 #root {
@@ -22,6 +23,21 @@
 }
 
 /* Utilities */
+
+.theContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--dark-blue);
+}
+
+.secondContainer {
+  width: 1200px;
+  height: 100%;
+  padding-top: 8rem;
+  position: relative;
+}
 
 .split {
   position: relative;
@@ -590,4 +606,71 @@
   left: -8rem;
   bottom: -1.5rem;
   transform: scale(0.8);
+}
+
+/* Homepage */
+
+.homePage {
+}
+
+/* Navbar when you are logged in */
+
+.hmPageNavbar {
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  z-index: 1;
+}
+
+.hmPageNavbar a {
+  text-decoration: none;
+}
+
+/* End of Navbar when you are logged in */
+
+.welcomeUser {
+  width: 100%;
+  height: 8rem;
+  margin-bottom: 2rem;
+  border-radius: var(--border-radius1);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    260deg,
+    rgba(251, 1, 254, 1) 0%,
+    rgba(30, 190, 216, 1) 100%
+  );
+}
+
+.welcomeUser img {
+  animation: gradient 85s infinite linear;
+  position: absolute;
+  top: -53rem;
+  left: -35rem;
+  rotate: 170deg;
+  scale: 0.5;
+}
+
+.welcomeUser div {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+}
+
+@keyframes gradient {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(0);
+    transform: rotate(360deg);
+  }
 }
