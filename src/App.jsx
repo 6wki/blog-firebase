@@ -7,8 +7,7 @@ import { useState } from "react";
 import { signOut } from "firebase/auth";
 import { auth } from "./Firebase";
 import HomePage from "./pages/LandingPage/LandingPage";
-import navData from "./pages/Navbar/navData";
-import Navbar from "./pages/Navbar/Navbar";
+import { HashRouter } from "react-router-dom";
 
 function App() {
   // Setting the Auth of the user
@@ -23,7 +22,7 @@ function App() {
   };
 
   return (
-    <Router>
+    <HashRouter>
       {/* If the user is logged in Show this navbar */}
       {isAuth && (
         <nav className="hmPageNavbar glass">
@@ -41,7 +40,7 @@ function App() {
         <Route path="/newpost" element={<Cp />} isAuth={isAuth} />
         <Route path="/login" element={<Lgn setIsAuth={setIsAuth} />} />
       </Routes>
-    </Router>
+    </HashRouter>
   );
 }
 
